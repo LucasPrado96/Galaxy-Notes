@@ -2,4 +2,279 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body{
+    background-image: url("gif.gif");
+ 
+    width: 100vw;
+    height: 100vh;
+}
+
+ .containertask{
+    display: flex;
+}
+
+.notes{
+    position: absolute;
+    width: 25%;
+}
+
+.corenote{
+ 
+   width: 100%;
+}
+
+.trash{
+    fill: #bfbfbf;
+    width: 15px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+    margin-left: 144%;
+    margin-top: -6%;
+   
+
+   
+}
+
+
+
+.plusnote{
+    width: 35px;
+    fill: #bfbfbf;
+    cursor: pointer;
+    margin-left: 22.5%;
+    margin-top: 12%;
+}
+
+
+.typenote{
+    width: 95%;
+    margin-left: 45%;;
+    margin-top: 2.5%;
+    background: linear-gradient(to bottom, #e6e6e6, #ff9933);
+    outline: none;
+    border: none;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 8px;
+    height: 45px;
+    padding: 8px;
+    overflow: hidden;
+    font-size: 15px;
+    box-shadow: 2px 1px 10px rgb(245, 149, 4);
+    
+
+}
+
+.plusnote:hover{
+    fill: #ff9933;
+}
+
+.plusnote:active{
+    opacity: 0.6;
+}
+
+.typenote:hover{
+    opacity: 1;
+}
+
+.trash:hover{
+    fill: #ff9933;
+}
+
+.trash:active{
+    opacity: 0.6;
+}
+
+.typenote:focus{
+    height: 180px;
+    overflow: visible;
+    cursor: text;
+}
+
+
+/* ------------------------ fim do notes ----------------------------*/
+
+
+
+.box-tolist{
+    background: linear-gradient(to bottom, #e6e6e6, #ff9933);
+    width: 27vw;
+    margin-left: 61%;
+    margin-top: 2px;
+    padding: 10px;
+    border-radius: 8px;
+    position: absolute;
+    opacity: 0.8;
+    border: 2px solid #ff9933);
+    box-shadow: 2px 1px 13px rgb(245, 149, 4);
+}
+
+input{
+    width: 80%;
+    outline: none;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    opacity: 0.8;
+    background-color: black;
+    color: white;
+}
+
+.buttonTask{
+    width: 15%;
+    min-width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+
+
+}
+
+.buttonTask:hover{
+    background-color:  #ff9933;
+    opacity: 1;
+}
+.buttonTask:active{
+    opacity: 0.6;
+}
+
+
+input:hover{
+opacity: 1;
+}
+
+input:active{
+    opacity: 1;
+}
+
+.list{
+    width: 100%;
+    margin-top: 20px;
+    list-style: none;
+}
+
+.listTask{
+  font-size: 20px;
+  padding: 8px;
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 5px 1px 15px rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+ 
+}
+
+.check-icon{
+    fill: ;
+    width: 18px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+   
+}
+
+p{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.trash-icon{
+    fill: ;
+    width: 15px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.trash-icon:hover{
+    fill: #ff9933;
+}
+
+.trash-icon:active{
+    opacity: 0.6;
+}
+
+.check-icon:hover{
+    fill: #ff9933;
+}
+
+.check-icon:active{
+    opacity: 0.6;
+}
+.box-tolist:hover{
+    opacity: 1;
+}
+
+/* ------------------------ fim do list taks ----------------------------*/
+
+.alternar{
+  display: none;
+}
+
+.notas, .lista{
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    background-color: white;
+    margin: 5px;
+}
+
+.notas:hover{
+    background-color:  #ff9933;
+    opacity: 1;
+}
+.notas:active{
+    opacity: 0.6;
+}
+
+.lista:hover{
+    background-color:  #ff9933;
+    opacity: 1;
+}
+.lista:active{
+    opacity: 0.6;
+}
+
+/* ------------------------ fim do alternar responsivo ----------------------------*/
+
+
+@media screen and (max-width: 850px){
+    .alternar{
+        display: block;
+    }
+
+    .box-tolist{
+        
+        width: 50%;
+        margin-top: 21%;
+        margin-left: 25%;
+    }
+
+    .notes{
+        margin-top: 5%;
+        margin-left: 2%;
+        width: 50%;
+      
+       
+    }
+
+    .plusnote{
+        display: none;
+      margin: 0;
+      margin-top: 80px;
+      margin-left: 46%;
+    }
 }
