@@ -5,12 +5,14 @@
     font-family: Roboto, sans-serif;
 }
 
+
+
 body{
-    background-image: url("gif.gif");
- 
     width: 100vw;
     height: 100vh;
+    background-image: url("gif.gif");    
 }
+
 
  .containertask{
     display: flex;
@@ -65,9 +67,13 @@ body{
     padding: 8px;
     overflow: hidden;
     font-size: 15px;
-    box-shadow: 2px 1px 10px rgb(245, 149, 4);
+    box-shadow: 2px 1px 10px rgba(245, 149, 4, 0.7);
     
 
+}
+
+.dateLabel{
+    margin-left: 50%;
 }
 
 .plusnote:hover{
@@ -80,6 +86,7 @@ body{
 
 .typenote:hover{
     opacity: 1;
+    box-shadow: 2px 1px 13px rgba(245, 149, 4, 1);
 }
 
 .trash:hover{
@@ -111,7 +118,7 @@ body{
     position: absolute;
     opacity: 0.8;
     border: 2px solid #ff9933);
-    box-shadow: 2px 1px 13px rgb(245, 149, 4);
+    box-shadow: 2px 1px 13px rgba(245, 149, 4, 0.7);
 }
 
 input{
@@ -214,7 +221,13 @@ p{
 }
 .box-tolist:hover{
     opacity: 1;
+    box-shadow: 2px 1px 13px rgba(245, 149, 4, 1);
 }
+
+.done{
+    background-color: #808080;
+    text-decoration: line-through;
+  }
 
 /* ------------------------ fim do list taks ----------------------------*/
 
@@ -257,16 +270,17 @@ p{
     }
 
     .box-tolist{
-        
-        width: 50%;
+        width: 65%;
         margin-top: 21%;
-        margin-left: 25%;
+        margin-left: 18%;
+        display: none;
     }
 
     .notes{
         margin-top: 5%;
-        margin-left: 2%;
-        width: 50%;
+        margin-left: -10%;
+        width: 65%;
+        display: none;
       
        
     }
