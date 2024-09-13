@@ -137,10 +137,11 @@ body{
 .buttonTask{
     width: 16%;
     min-width: 30px;
-    height: 30px;
+    height: 34px;
     border-radius: 5px;
     cursor: pointer;
     background-color: white;
+    font-weight: 800;
 
 
 }
